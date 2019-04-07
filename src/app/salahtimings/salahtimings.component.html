@@ -1,0 +1,65 @@
+<h3 *ngIf="!SalahTimings">loading....</h3>
+
+<div class="panel panel-primary" *ngIf="SalahTimings">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{Date}}</h3>
+  </div>
+  <div class="panel-body">
+
+    <div class="col-xs-10">
+
+      <div class="row vertical-align">
+
+        
+        <div class="col-xs-8">
+
+          <div class="row">
+            <div class="col-xs-6">
+              Fajr
+            </div>
+            <div class="col-xs-6">
+              : {{SalahTimings.Fajr}}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+              Dhuhr
+            </div>
+            <div class="col-xs-6">
+              : {{SalahTimings.Dhuhr}}
+            </div>
+          </div>
+          </div>
+          <div class="col-xs-8">
+
+            <div class="row">
+              <div class="col-xs-6">
+                Asr
+              </div>
+              <div class="col-xs-6">
+                : {{SalahTimings.Asr}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Maghrib
+              </div>
+              <div class="col-xs-6">
+                : {{SalahTimings.Maghrib}}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-6">
+                Isha
+              </div>
+              <div class="col-xs-6">
+                : {{SalahTimings.Isha}}
+              </div>
+            </div>
+            </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
